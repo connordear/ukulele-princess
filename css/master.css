@@ -1,0 +1,82 @@
+/*================== FONT IMPORT ====================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+
+@font-face {
+    font-family: 'SanziahAlt';
+    src: url('../assets/fonts/sanziah_alt.woff2') format('woff2'),
+        url('../assets/fonts/sanziah_alt.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SanziahRegular';
+    src: url('../assets/fonts/sanziah_regular.woff2') format('woff2'),
+        url('../assets/fonts/sanziah_regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*===================================================*/
+
+
+
+
+
+/*================== GENERAL STYLES ====================*/
+
+
+/* Main Titles */
+h1 {
+    font-family: "SanziahAlt", "Georgia", serif;
+    font-size: 200pt;
+}
+
+/* Sub Headings */
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 28pt;
+    letter-spacing: 5pt;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18pt;
+    letter-spacing: 4pt;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Georgia", serif;
+    font-size: 14pt;
+    letter-spacing: 0.75pt;
+}
+
+button {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+}
+
+.white-text {
+    color: #FFFFFF;
+}
+
+.black-text {
+    color: #000000;
+}
+
+.grey-backround {
+    background-color: #2E2E2E;
+}
+
+/*===================================================*/
+
+
+
+
+
+/*================== LAYOUT CLASSES ====================*/
+
+/*===================================================*/
