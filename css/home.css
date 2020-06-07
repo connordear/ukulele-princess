@@ -1,0 +1,120 @@
+/*================== TITLE SECTION ====================*/
+
+.title-container {
+    background-image: url("../assets/photos/title-night-of-music.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 5%;
+    box-shadow: var(--drop-shadow);
+}
+
+.title-logo {
+    width: 600px;
+    margin-bottom: -50px;
+}
+
+/*===================================================*/
+
+/*================== SUBTITLE SECTION ====================*/
+
+.subtitle-section {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+.subtitle-heading {
+    text-align: right;
+    color: var(--white);
+    max-width: 400px;
+    font-size: 28pt;
+    letter-spacing: 5pt;
+}
+
+/*===================================================*/
+
+/*================== INTRO SECTION ====================*/
+
+.intro-section {
+    background-color: var(--white);
+    color: var(--black);
+    padding-bottom: 50px;
+}
+
+.intro-img {
+    width: 100%;
+    margin-top: -50px;
+}
+
+.intro-quote {
+    padding-top: 60px;
+    font-size: 35pt;
+}
+
+.quote-mark {
+    font-family: "Cosette", serif;
+    font-size: 200pt;
+    line-height: 150pt;
+    position: absolute;
+}
+
+
+.quote-mark-left {
+    margin-top: -20px;
+    margin-left: -50px;
+}
+
+.quote-mark-right {
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.quote-signature {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 2px;
+    line-height: 25px;
+    margin-top: 50px;
+    color: var(--light-grey);
+}
+
+.jhui-container {
+    margin-top: 80px;
+}
+
+.jhui-img {
+    margin: 0 auto;
+    width: 150px;
+    box-shadow: none;
+}
+
+
+/*===================================================*/
+
+/*================== MEDIA SIZING CLASSES ====================*/
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .title-container {
+        margin-top: auto;
+    }
+
+    .title-logo {
+        width: 90%;
+        margin-bottom: 0;
+    }
+
+    .subtitle-heading {
+        text-align: left;
+    }
+}
+
+/*===================================================*/

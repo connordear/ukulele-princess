@@ -1,31 +1,57 @@
 /*================== FONT IMPORT ====================*/
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
 
 @font-face {
-    font-family: 'SanziahAlt';
-    src: url('../assets/fonts/sanziah_alt.woff2') format('woff2'),
-        url('../assets/fonts/sanziah_alt.woff') format('woff');
+    font-family: "SanziahAlt";
+    src: url("../assets/fonts/sanziah_alt.woff2") format("woff2"),
+        url("../assets/fonts/sanziah_alt.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'SanziahRegular';
-    src: url('../assets/fonts/sanziah_regular.woff2') format('woff2'),
-        url('../assets/fonts/sanziah_regular.woff') format('woff');
+    font-family: "SanziahRegular";
+    src: url("../assets/fonts/sanziah_regular.woff2") format("woff2"),
+        url("../assets/fonts/sanziah_regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Cosette';
+    src: url('Cosette.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*===================================================*/
+
+/*================== COLOURS & KEYSTONE SPACING ====================*/
+
+:root {
+    --dark-grey: #2e2e2e;
+    --light-grey: #7c7c7c;
+    --crown-gold: #d59638;
+    --white: #ffffff;
+    --black: #000000;
+    --drop-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    --section-margin: 100px;
+    --transition-timing: 0.5s;
 }
 
 /*===================================================*/
 
-
-
-
-
 /*================== GENERAL STYLES ====================*/
 
+/* Body */
+body {
+    background-color: var(--dark-grey);
+    color: var(--white);
+    font-family: "Montserrat", sans-serif;
+}
 
 /* Main Titles */
 h1 {
@@ -33,19 +59,31 @@ h1 {
     font-size: 200pt;
 }
 
-/* Sub Headings */
+/* Section Headings */
 h2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 28pt;
-    letter-spacing: 5pt;
+    font-size: 20pt;
+    letter-spacing: 2pt;
     text-transform: uppercase;
+    color: var(--dark-grey)
 }
 
+/* Subtitle */
 h3 {
-    font-family: "Montserrat", sans-serif;
     font-size: 18pt;
     letter-spacing: 4pt;
     text-transform: uppercase;
+}
+
+h4 {
+    font-size: 12pt;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h5 {
+    font-size: 8pt;
+    text-transform: uppercase;
+    margin-top: 10px;
 }
 
 p {
@@ -55,12 +93,39 @@ p {
 }
 
 button {
-    font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
+    font-size: 11pt;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: var(--light-grey);
+    border: 0.25px solid var(--light-grey);
+    letter-spacing: 2px;
+    transition: var(--transition-timing);
+}
+
+button:hover {
+    background-color: var(--dark-grey);
+    border: 0.25px solid var(--dark-grey);
+    color: var(--white);
+    box-shadow: var(--drop-shadow);
+    transition: var(--transition-timing);
+}
+
+img {
+    box-shadow: var(--drop-shadow);
+}
+
+.text-center {
+    text-align: center;
 }
 
 .white-text {
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .black-text {
@@ -68,15 +133,152 @@ button {
 }
 
 .grey-backround {
-    background-color: #2E2E2E;
+    background-color: #2e2e2e;
+}
+
+.link {
+    color: #29A2E7;
+    text-decoration: underline;
+}
+
+.default-margin {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: var(--section-margin);
+}
+
+.no-shadow {
+    box-shadow: none;
 }
 
 /*===================================================*/
 
+/*================== FLEX CLASSES ====================*/
+
+.flex-container {
+    display: flex;
+    width: 70%;
+    margin: 30px auto;
+    flex-direction: column;
+    margin-top: var(--section-margin);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.flex-center-horizontally {
+    justify-content: center;
+}
+
+.flex-center-vertically {
+    align-items: center;
+}
+
+/*===================================================*/
+
+/*================== GRID CLASSES ====================*/
+
+.grid-container {
+    display: grid;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: var(--section-margin);
+}
+
+.grid-auto-size {
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 10%;
+    grid-row-gap: 20px;
+}
+
+/*===================================================*/
+
+/*================== NAV CLASSES ====================*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    /* border-bottom: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-link {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1pt;
+    font-size: 10pt;
+}
+
+.nav-link>a {
+    padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    transition: var(--transition-timing);
+}
+
+.nav-link>a:hover {
+    color: var(--crown-gold);
+    transition: var(--transition-timing);
+    /* box-shadow: var(--drop-shadow); */
+}
+
+.nav-logo {
+    height: 60px;
+    box-shadow: none;
+}
+
+/*===================================================*/
+
+/*================== MEDIA SIZING CLASSES ====================*/
 
 
+footer {
+    padding-bottom: 100px;
+}
+
+.footer-img {
+    max-width: 300px;
+}
 
 
-/*================== LAYOUT CLASSES ====================*/
+/*===================================================*/
+
+/*================== MEDIA SIZING CLASSES ====================*/
+
+@media (max-width: 775px) {
+    .flex-container {
+        flex-direction: column;
+        width: auto;
+    }
+}
 
 /*===================================================*/

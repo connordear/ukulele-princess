@@ -2,38 +2,129 @@
     <head>
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/master.css" />
+        <link rel="stylesheet" href="./css/home.css" />
     </head>
     <title>Ukulele Princess - Home</title>
 
     <body>
-        <nav></nav>
+        <nav>
+            <ul>
+                <li class="nav-link">
+                    <a href="html/herstory.html">Herstory</a>
+                </li>
+                <li class="nav-link">
+                    <a href="html/lessons.html">Lessons</a>
+                </li>
+                <li>
+                    <a href="./index.html">
+                        <img
+                            class="nav-logo"
+                            src="assets/graphics/uke-princess-logo-white.png"
+                            alt=""
+                        />
+                    </a>
+                </li>
+                <li class="nav-link">
+                    <a href="html/photos.html">Photos</a>
+                </li>
+                <li class="nav-link">
+                    <a href="html/contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
         <!-- Title Section -->
-        <section>
-            <h1>Ukulele Princess</h1>
-            <h3>The Art Of Ukulele Instruction</h3>
+        <section class="flex-container title-container">
+            <img
+                class="title-logo"
+                src="assets/graphics/uke-princess-logo-white.png"
+            />
+            <h3 class="text-center">The Art Of Ukulele Instruction</h3>
         </section>
 
         <!-- Sub Title Section -->
-        <section>
-            <h2>Discover Music Making With Ukulele</h2>
-            <p>
-                Do you want to learn to play the ukulele? <br />
-                Do you want to learn how to teach it in school? <br />
-                Do you want to make music with your friends? I LOVE teaching
-                ukulele! <br />
-                Search around this site to see how I can help, what ukulele
-                services I offer, and why I’m your gal. <br />
-            </p>
-            <p>
-                I'm fairly certain that given a cape and a nice tiara, I could
-                teach anyone the ukulele.
-            </p>
+        <section class="grid-container grid-auto-size subtitle-section">
+            <div class="col flex-center-horizontally">
+                <h2 class="subtitle-heading">
+                    Discover Music Making With Ukulele
+                </h2>
+            </div>
+            <div>
+                <p>
+                    Do you want to learn to play the ukulele? <br /><br />
+                    Do you want to learn how to teach it in school? <br /><br />
+                    Do you want to make music with your friends? <br /><br />
+                    I LOVE teaching ukulele! <br /><br />
+                    Search around this site to see how I can help, what ukulele
+                    services I offer, and why I’m your gal. <br />
+                </p>
+            </div>
         </section>
 
-        <!-- Photo + Quote -->
+        <!-- Intro Section -->
+        <section class="intro-section">
+            <div class="grid-container grid-auto-size">
+                <div class="col">
+                    <img
+                        class="intro-img"
+                        src="assets/photos/monica-smile.jpg"
+                    />
+                </div>
+                <div class="col flex-center-horizontally">
+                    <p class="intro-quote">
+                        <span class="quote-mark quote-mark-left">&ldquo;</span>
+                        I'm fairly certain that given a cape and a nice tiara, I
+                        could teach anyone the ukulele.
+                        <span class="quote-mark quote-mark-right">&rdquo;</span>
+                    </p>
+                    <p class="quote-signature">
+                        Monica Dear <br />
+                        (Inspired By Leigh Stanley)
+                    </p>
+                </div>
+            </div>
 
-        <footer></footer>
+            <!-- JHUI Info -->
+            <div class="jhui-container">
+                <h4 class="text-center">JHUI Level III Teacher</h4>
+                <a class="link" href="https://www.uketropolis.com/teachers">
+                    <h5 class="text-center">Teacher Directory</h5>
+                </a>
+            </div>
+            <div class="grid-container grid-auto-size">
+                <img
+                    class="jhui-img"
+                    src="./assets/photos/jhui-level-one.png"
+                />
+                <img
+                    class="jhui-img"
+                    src="./assets/photos/jhui-level-two.png"
+                />
+                <img
+                    class="jhui-img"
+                    src="./assets/photos/jhui-level-three.png"
+                />
+            </div>
+            <!-- Lessons CTA -->
+            <h2 class="text-center default-margin">
+                Interested In Learning The Uke?
+            </h2>
+            <a href="./html/lessons.html"><button>View Lessons</button></a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="grid-container grid-auto-size">
+            <div class="col">
+                <h2 class="white-text">Edmonton, AB</h2>
+                <h5>monica@ukuleleprincess.com</h5>
+            </div>
+            <div class="col">
+                <img
+                    class="no-shadow footer-img"
+                    src="./assets/photos/fresh-sheet-music-logo.png"
+                />
+            </div>
+        </footer>
 
         <script src=""></script>
     </body>
