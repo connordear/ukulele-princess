@@ -97,7 +97,7 @@
 
 /*================== MEDIA SIZING CLASSES ====================*/
 
-@media (max-width: 800px) {
+@media (max-width: 775px) {
     .container {
         flex-direction: column;
         width: auto;

@@ -3,40 +3,22 @@
         <link rel="stylesheet" href="./css/reset.css" />
         <link rel="stylesheet" href="./css/master.css" />
         <link rel="stylesheet" href="./css/home.css" />
+        <meta
+            name="viewport"
+            content="width=device-width, maximum-scale=1, minimum-scale=1"
+        />
     </head>
     <title>Ukulele Princess - Home</title>
 
     <body>
-        <nav>
-            <ul>
-                <li class="nav-link">
-                    <a href="html/herstory.html">Herstory</a>
-                </li>
-                <li class="nav-link">
-                    <a href="html/lessons.html">Lessons</a>
-                </li>
-                <li>
-                    <a href="./index.html">
-                        <img
-                            class="nav-logo"
-                            src="assets/graphics/uke-princess-logo-white.png"
-                            alt=""
-                        />
-                    </a>
-                </li>
-                <li class="nav-link">
-                    <a href="html/photos.html">Photos</a>
-                </li>
-                <li class="nav-link">
-                    <a href="html/contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <header>
+            <nav class="nav-margin-top"></nav>
+        </header>
 
         <!-- Title Section -->
         <section class="flex-container title-container">
             <img
-                class="title-logo"
+                class="title-logo no-shadow"
                 src="assets/graphics/uke-princess-logo-white.png"
             />
             <h3 class="text-center">The Art Of Ukulele Instruction</h3>
@@ -113,19 +95,37 @@
         </section>
 
         <!-- Footer -->
-        <footer class="grid-container grid-auto-size">
-            <div class="col">
-                <h2 class="white-text">Edmonton, AB</h2>
-                <h5>monica@ukuleleprincess.com</h5>
-            </div>
-            <div class="col">
-                <img
-                    class="no-shadow footer-img"
-                    src="./assets/photos/fresh-sheet-music-logo.png"
-                />
-            </div>
-        </footer>
+        <footer class="grid-container grid-auto-size"></footer>
 
-        <script src=""></script>
+        <!-- Scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/insertNavAndFooter.js"></script>
+        <script src="./js/navController.js"></script>
+
+        <div id="sidebar">
+            <ul>
+                <li class="nav-link">
+                    <a href="html/herstory.html">Herstory</a>
+                </li>
+                <li class="nav-link">
+                    <a href="html/lessons.html">Lessons</a>
+                </li>
+                <li class="nav-link">
+                    <a href="html/photos.html">Photos</a>
+                </li>
+                <li class="nav-link">
+                    <a href="html/contact.html">Contact</a>
+                </li>
+                <li class="nav-link">
+                    <button id="sidebar-close" onclick="toggleSidebar()">
+                        Close
+                    </button>
+                </li>
+            </ul>
+        </div>
     </body>
 </html>
