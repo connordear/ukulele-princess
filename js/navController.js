@@ -11,6 +11,74 @@ const smallNavBarContent = `
     </div>
 `;
 
+const navBarContent = `
+    <ul>
+        <li class="nav-link">
+            <a href="html/herstory.html">Herstory</a>
+        </li>
+        <li class="nav-link">
+            <a href="html/lessons.html">Lessons</a>
+        </li>
+        <li>
+            <a href="./index.html">
+                <img
+                    class="nav-logo"
+                    src="assets/graphics/uke-princess-logo-white.png"
+                    alt=""
+                />
+            </a>
+        </li>
+        <li class="nav-link">
+            <a href="html/photos.html">Photos</a>
+        </li>
+        <li class="nav-link">
+            <a href="html/contact.html">Contact</a>
+        </li>
+    </ul>
+`;
+
+const footerContent = `
+    <div class="col">
+        <h2 class="white-text">Edmonton, AB</h2>
+        <h5>monica@ukuleleprincess.com</h5>
+    </div>
+    <div class="col">
+        <img
+            class="no-shadow footer-img"
+            src="./assets/photos/fresh-sheet-music-logo.png"
+        />
+    </div>
+`;
+
+const sidebarContent = `
+    <div id="sidebar">
+        <ul>
+            <li class="nav-link">
+                <a href="html/herstory.html">Herstory</a>
+            </li>
+            <li class="nav-link">
+                <a href="html/lessons.html">Lessons</a>
+            </li>
+            <li class="nav-link">
+                <a href="html/photos.html">Photos</a>
+            </li>
+            <li class="nav-link">
+                <a href="html/contact.html">Contact</a>
+            </li>
+            <li class="nav-link">
+                <button id="sidebar-close" onclick="toggleSidebar()">
+                    Close
+                </button>
+            </li>
+        </ul>
+    </div>
+`;
+// Insert content into the page
+$("nav")[0].innerHTML = navBarContent;
+$("footer")[0].innerHTML = footerContent;
+$("body")[0].innerHTML += sidebarContent;
+
+// Add scroll event to check if the background has changed
 $(window).scroll(() => {
     let currentYPosition = $(window).scrollTop();
     let introSectionYStart = $(".intro-section").position().top;
@@ -24,10 +92,13 @@ $(window).scroll(() => {
     } else {
         $("nav").addClass("nav-margin-top");
     }
-})
+});
 
+// Call renderNavBar on start to check for mobile sizing
 renderNavBar();
-$(window).resize(renderNavBar)
+
+// Add window resize event callback
+$(window).resize(renderNavBar);
 
 function renderNavBar() {
     let windowWidth = $(window).width();
@@ -38,7 +109,6 @@ function renderNavBar() {
         $("footer")[0].innerHTML = footerContent;
     }
 }
-
 
 // ========= SIDEBAR LOGIC =========== //
 
