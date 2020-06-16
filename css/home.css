@@ -39,8 +39,6 @@
 /*================== INTRO SECTION ====================*/
 
 .intro-section {
-    background-color: var(--white);
-    color: var(--black);
     padding-bottom: 50px;
 }
 
@@ -60,7 +58,6 @@
     line-height: 150pt;
     position: absolute;
 }
-
 
 .quote-mark-left {
     margin-top: -20px;
@@ -91,7 +88,6 @@
     width: 150px;
     box-shadow: none;
 }
-
 
 /*===================================================*/
 

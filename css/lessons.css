@@ -1,0 +1,9 @@
+.show-section {
+    height: auto;
+    visibility: visible;
+}
+
+.hide-section {
+    visibility: hidden;
+    height: 0;
+}

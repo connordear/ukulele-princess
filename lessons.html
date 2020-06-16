@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/master.css" />
+        <link rel="stylesheet" href="./css/lessons.css" />
+        <meta
+            name="viewport"
+            content="width=device-width, maximum-scale=1, minimum-scale=1"
+        />
+    </head>
+    <title>Ukulele Princess - Lessons</title>
+
+    <body>
+        <header>
+            <nav class="nav-margin-top"></nav>
+        </header>
+
+        <!-- Title Section -->
+        <section class="flex-container flex-center-vertically">
+            <div class="col">
+                <h1>Lessons</h1>
+                <button
+                    id="teacher-button"
+                    onclick="showSection('teacher'); selectButton('teacher')"
+                >
+                    For Teachers
+                </button>
+                <button
+                    id="student-button"
+                    onclick="showSection('student'); selectButton('student')"
+                >
+                    For Students
+                </button>
+            </div>
+            <div class="col"></div>
+        </section>
+
+        <!-- Teacher Section -->
+        <section class="hide-section" id="teacher-section">
+            Teacher Section
+        </section>
+
+        <!-- Student Section -->
+        <section class="hide-section" id="student-section">
+            Student Section
+        </section>
+
+        <!-- Footer -->
+        <footer class="grid-container grid-auto-size"></footer>
+
+        <!-- Scripts -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+            crossorigin="anonymous"
+        ></script>
+        <script src="./js/navController.js"></script>
+        <script src="./js/lessonsController.js"></script>
+    </body>
+</html>

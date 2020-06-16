@@ -14,10 +14,10 @@ const smallNavBarContent = `
 const navBarContent = `
     <ul>
         <li class="nav-link">
-            <a href="html/herstory.html">Herstory</a>
+            <a href="./herstory.html">Herstory</a>
         </li>
         <li class="nav-link">
-            <a href="html/lessons.html">Lessons</a>
+            <a href="./lessons.html">Lessons</a>
         </li>
         <li>
             <a href="./index.html">
@@ -29,10 +29,10 @@ const navBarContent = `
             </a>
         </li>
         <li class="nav-link">
-            <a href="html/photos.html">Photos</a>
+            <a href="./photos.html">Photos</a>
         </li>
         <li class="nav-link">
-            <a href="html/contact.html">Contact</a>
+            <a href="./contact.html">Contact</a>
         </li>
     </ul>
 `;
@@ -81,10 +81,14 @@ $("body")[0].innerHTML += sidebarContent;
 // Add scroll event to check if the background has changed
 $(window).scroll(() => {
     let currentYPosition = $(window).scrollTop();
-    let introSectionYStart = $(".intro-section").position().top;
+    let whiteBackgroundPosition = $(".white-background").position();
+    let whiteBackgroundPositionStart =
+        typeof whiteBackgroundPosition === "undefined"
+            ? Infinity
+            : whiteBackgroundPosition.top;
     if (currentYPosition > 0) {
         $("nav").removeClass("nav-margin-top");
-        if (currentYPosition >= introSectionYStart) {
+        if (currentYPosition >= whiteBackgroundPositionStart) {
             $("nav").addClass("nav-bar-dark-bg");
         } else {
             $("nav").removeClass("nav-bar-dark-bg");
