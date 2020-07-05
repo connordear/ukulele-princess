@@ -1,6 +1,7 @@
 /*================== TITLE SECTION ====================*/
 
 .title-container {
+    flex-direction: column;
     background-image: url("../assets/photos/title-night-of-music.jpg");
     height: 600px;
     background-position: center;
@@ -50,6 +51,7 @@
 .intro-quote {
     padding-top: 60px;
     font-size: 35pt;
+    line-height: 36pt;
 }
 
 .quote-mark {

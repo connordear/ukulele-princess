@@ -1,6 +1,6 @@
 /*================== FONT IMPORT ====================*/
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
 
 @font-face {
     font-family: "SanziahAlt";
@@ -32,6 +32,7 @@
 :root {
     --dark-grey: #2e2e2e;
     --dark-grey-transparent: #2e2e2e5a;
+    --dark-grey-transluscent: #2e2e2eCC;
     --light-grey: #7c7c7c;
     --crown-gold: #d59638;
     --white: #ffffff;
@@ -39,6 +40,7 @@
     --drop-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --section-margin: 100px;
+    --small-margin: 10px;
     --transition-timing: 0.5s;
     --media-max-width: 775px;
 }
@@ -62,7 +64,9 @@ h1 {
 
 /* Section Headings */
 h2 {
-    font-size: 20pt;
+    font-size: 35pt;
+    font-weight: 200;
+    text-align: center;
     letter-spacing: 2pt;
     text-transform: uppercase;
     color: var(--dark-grey);
@@ -82,15 +86,20 @@ h4 {
 }
 
 h5 {
-    font-size: 8pt;
+    font-size: 24pt;
+    font-family: "Montserrat";
+    font-weight: 200;
+    letter-spacing: 1pt;
     text-transform: uppercase;
     margin-top: 10px;
 }
 
 p {
     font-family: "Georgia", serif;
+    font-weight: 100;
     font-size: 14pt;
-    letter-spacing: 0.75pt;
+    letter-spacing: 0.5pt;
+    line-height: 20pt;
 }
 
 button {
@@ -197,6 +206,10 @@ img {
     margin-top: var(--section-margin);
 }
 
+.small-margin {
+    margin-top: var(--small-margin);
+}
+
 .no-shadow {
     box-shadow: none;
 }
@@ -209,7 +222,7 @@ img {
     display: flex;
     width: 70%;
     margin: 30px auto;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: var(--section-margin);
 }
 
@@ -239,7 +252,7 @@ img {
 
 .grid-container {
     display: grid;
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     margin-top: var(--section-margin);
 }
@@ -251,7 +264,74 @@ img {
     grid-row-gap: 20px;
 }
 
+.grid-one-third {
+    align-items: center;
+    grid-template-columns: 33% auto;
+    grid-column-gap: 10%;
+    grid-row-gap: 20px;
+}
+
+/*================== CARD CLASSES ====================*/
+
+.card {
+    width: 300px;
+    height: 400px;
+    padding: 10px;
+    background-color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    transition: box-shadow var(--transition-timing) ease-in;
+}
+
+.card .card-img {
+    height: 70%;
+    width: 90%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .hover-text {
+    /* height: 100%; */
+    padding-top: 49%;
+    padding-bottom: 49%;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    font-size: 15pt;
+    transition: opacity var(--transition-timing);
+}
+
+.card:hover {
+    box-shadow: var(--drop-shadow);
+}
+
+.card:hover .hover-text {
+    opacity: 100%;
+    color: var(--crown-gold);
+    background-color: var(--dark-grey-transluscent);
+}
+
+.card .bottom-text {
+    letter-spacing: 2pt;
+    font-size: 13pt;
+}
+
+/* If there's an image, darken it */
+
 /*===================================================*/
+
+
+
+/*===================================================*/
+
+
 
 /*================== NAV CLASSES ====================*/
 
@@ -288,14 +368,14 @@ nav ul li {
     font-size: 10pt;
 }
 
-.nav-link > a {
+.nav-link>a {
     padding: 15px;
     padding-left: 35px;
     padding-right: 35px;
     transition: var(--transition-timing);
 }
 
-.nav-link > a:hover {
+.nav-link>a:hover {
     color: var(--crown-gold);
     transition: var(--transition-timing);
     /* box-shadow: var(--drop-shadow); */
@@ -372,7 +452,7 @@ nav ul li {
 
 /*===================================================*/
 
-/*================== MEDIA SIZING CLASSES ====================*/
+/*================== Footer Styling ====================*/
 
 footer {
     padding-bottom: 100px;
@@ -390,6 +470,10 @@ footer {
     .flex-container {
         flex-direction: column;
         width: auto;
+    }
+
+    .grid-one-third {
+        grid-template-columns: auto;
     }
 }
 

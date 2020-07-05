@@ -39,8 +39,8 @@ const navBarContent = `
 
 const footerContent = `
     <div class="col">
-        <h2 class="white-text">Edmonton, AB</h2>
-        <h5>monica@ukuleleprincess.com</h5>
+        <h4 class="white-text">Edmonton, AB</h4>
+        <h4>monica@ukuleleprincess.com</h4>
     </div>
     <div class="col">
         <img

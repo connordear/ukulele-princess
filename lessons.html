@@ -16,9 +16,10 @@
         </header>
 
         <!-- Title Section -->
-        <section class="flex-container flex-center-vertically">
+        <section class="title-section grid-container grid-auto-size">
+            <!-- <div class="row flex-center-vertically"> -->
             <div class="col">
-                <h1>Lessons</h1>
+                <h1 class="text-center">Lessons</h1>
                 <button
                     id="teacher-button"
                     onclick="showSection('teacher'); selectButton('teacher')"
@@ -32,12 +33,68 @@
                     For Students
                 </button>
             </div>
-            <div class="col"></div>
+            <div class="col">
+                <img class="side-img" src="./assets/photos/group-lesson.jpeg" />
+            </div>
+            <!-- </div> -->
         </section>
 
         <!-- Teacher Section -->
         <section class="hide-section" id="teacher-section">
-            Teacher Section
+            <div class="grid-container grid-one-third">
+                <img
+                    class="side-img"
+                    src="./assets/photos/monica-james.jpg"
+                    alt=""
+                />
+                <p>
+                    I love seeing teachers become comfortable teaching ukulele
+                    to their own students, with good pedagogy, technique, skills
+                    and a wide variety of repertoire. <br />
+                    <br />
+                    I share concepts, resources and strategies that I have
+                    developed over the years, incorporating new and current
+                    materials, from the best that YouTube has to offer to the
+                    excellent resources developed by the acclaimed James Hill.
+                </p>
+            </div>
+
+            <h2 class="white-text default-margin">Lessons for Teachers</h2>
+            <div class="grid-container grid-auto-size">
+                <div class="card">
+                    <div
+                        class="card-img"
+                        style="
+                            background-image: url('./assets/photos/teachers I taught at Austin TX.jpeg');
+                        "
+                    >
+                        <h4 class="hover-text">Learn More</h4>
+                    </div>
+                    <h4 class="bottom-text text-center">1-2 Hour Session</h4>
+                </div>
+                <div class="card">
+                    <div
+                        class="card-img"
+                        style="
+                            background-image: url('./assets/photos/teachers I taught at Austin TX.jpeg');
+                        "
+                    >
+                        <h4 class="hover-text">Learn More</h4>
+                    </div>
+                    <h4 class="bottom-text text-center">1-2 Hour Session</h4>
+                </div>
+                <div class="card">
+                    <div
+                        class="card-img"
+                        style="
+                            background-image: url('./assets/photos/teachers I taught at Austin TX.jpeg');
+                        "
+                    >
+                        <h4 class="hover-text">Learn More</h4>
+                    </div>
+                    <h4 class="bottom-text text-center">1-2 Hour Session</h4>
+                </div>
+            </div>
         </section>
 
         <!-- Student Section -->

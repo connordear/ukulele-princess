@@ -7,3 +7,16 @@
     visibility: hidden;
     height: 0;
 }
+
+
+/*=============== TITLE SECTION ===============*/
+
+.title-section {
+    /* width: 90%; */
+    /* justify-content: space-around; */
+}
+
+.side-img {
+    margin-top: 5%;
+    width: 100%;
+}
