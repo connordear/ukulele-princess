@@ -32,16 +32,18 @@
 :root {
     --dark-grey: #2e2e2e;
     --dark-grey-transparent: #2e2e2e5a;
-    --dark-grey-transluscent: #2e2e2eCC;
+    --dark-grey-transluscent: #2e2e2ecc;
     --light-grey: #7c7c7c;
     --crown-gold: #d59638;
     --white: #ffffff;
     --black: #000000;
+    --black-transluscent: #000000dc;
     --drop-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
         0 6px 20px 0 rgba(0, 0, 0, 0.19);
     --section-margin: 100px;
     --small-margin: 10px;
     --transition-timing: 0.5s;
+    --transition-timing-fast: 0.2s;
     --media-max-width: 775px;
 }
 
@@ -132,6 +134,7 @@ button:active {
     color: gold;
 }
 
+
 .button-selected {
     background-color: var(--white);
     color: var(--black);
@@ -204,6 +207,11 @@ img {
     width: 70%;
     margin: 0 auto;
     margin-top: var(--section-margin);
+}
+
+.section-pad {
+    padding-top: var(--section-margin);
+    padding-bottom: var(--section-margin);
 }
 
 .small-margin {
@@ -283,7 +291,7 @@ img {
     justify-content: space-evenly;
     align-items: center;
     cursor: pointer;
-    transition: box-shadow var(--transition-timing) ease-in;
+    transition: box-shadow var(--transition-timing-fast) ease-in;
 }
 
 .card .card-img {
@@ -297,28 +305,39 @@ img {
     justify-content: center;
 }
 
-.card .hover-text {
-    /* height: 100%; */
-    padding-top: 49%;
-    padding-bottom: 49%;
+.card-hover-text-container {
+    height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    background-color: var(--black-transluscent);
+    transition: opacity var(--transition-timing-fast);
+}
+
+.card:hover .card-hover-text-container {
+    opacity: 100%;
+}
+
+.card .card-hover-text {
     text-align: center;
     opacity: 0;
     font-size: 15pt;
-    transition: opacity var(--transition-timing);
+    transition: opacity var(--transition-timing-fast);
 }
 
 .card:hover {
     box-shadow: var(--drop-shadow);
 }
 
-.card:hover .hover-text {
+.card:hover .card-hover-text {
     opacity: 100%;
     color: var(--crown-gold);
-    background-color: var(--dark-grey-transluscent);
+    background-color: var(--black-transluscent);
 }
 
-.card .bottom-text {
+.card .card-bottom-text {
     letter-spacing: 2pt;
     font-size: 13pt;
 }
@@ -327,11 +346,57 @@ img {
 
 /*===================================================*/
 
+/*================== MODAL CLASSES ====================*/
 
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
+#modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--black-transluscent);
+    z-index: 50;
+}
+
+#modal-content {
+    position: fixed;
+    top: 100px;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    width: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 30px;
+    border-radius: 2px;
+    z-index: 100;
+}
+
+#modal-content h2 {
+    margin-top: 15px;
+}
+
+#modal-content img {
+    margin-top: 15px;
+    width: 80%;
+    height: auto;
+}
+
+#modal-content p {
+    margin-top: 15px;
+    font-family: "Montserrat", sans-serif;
+    color: var(--black);
+}
 
 /*===================================================*/
-
-
 
 /*================== NAV CLASSES ====================*/
 
@@ -425,7 +490,7 @@ nav ul li {
 #sidebar {
     position: fixed;
     width: 50%;
-    height: 105vh;
+    height: 100vh;
     right: -52%;
     top: 0;
     bottom: 0;

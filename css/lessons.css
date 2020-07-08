@@ -8,15 +8,49 @@
     height: 0;
 }
 
+/*=============================================*/
+
 
 /*=============== TITLE SECTION ===============*/
 
 .title-section {
-    /* width: 90%; */
-    /* justify-content: space-around; */
+    width: 90%;
+    justify-content: space-around;
 }
 
 .side-img {
     margin-top: 5%;
     width: 100%;
 }
+
+/*=============================================*/
+
+
+/*=============== KIND WORDS SECTION ===============*/
+
+.quote-mark {
+    font-family: "Cosette", serif;
+    font-size: 300pt;
+    margin-top: -60px;
+    display: block;
+    text-align: center;
+    margin-bottom: -250px;
+}
+
+.testimonial-container {
+    max-width: 800px;
+}
+
+.testimonial-container p {
+    margin-bottom: 20px;
+}
+
+.testimonial-container h3 {
+    margin-bottom: 5px;
+    font-size: 13pt;
+    letter-spacing: 0.5pt;
+    font-variant: small-caps;
+    color: var(--light-grey)
+}
+
+/*=============================================*/

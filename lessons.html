@@ -15,6 +15,11 @@
             <nav class="nav-margin-top"></nav>
         </header>
 
+        <!-- Modal -->
+        <div id="modal-bg" class="hidden">
+            <div class="hidden" id="modal-content"></div>
+        </div>
+
         <!-- Title Section -->
         <section class="title-section grid-container grid-auto-size">
             <!-- <div class="row flex-center-vertically"> -->
@@ -60,46 +65,26 @@
             </div>
 
             <h2 class="white-text default-margin">Lessons for Teachers</h2>
-            <div class="grid-container grid-auto-size">
-                <div class="card">
-                    <div
-                        class="card-img"
-                        style="
-                            background-image: url('./assets/photos/teachers I taught at Austin TX.jpeg');
-                        "
-                    >
-                        <h4 class="hover-text">Learn More</h4>
-                    </div>
-                    <h4 class="bottom-text text-center">1-2 Hour Session</h4>
-                </div>
-                <div class="card">
-                    <div
-                        class="card-img"
-                        style="
-                            background-image: url('./assets/photos/teachers I taught at Austin TX.jpeg');
-                        "
-                    >
-                        <h4 class="hover-text">Learn More</h4>
-                    </div>
-                    <h4 class="bottom-text text-center">1-2 Hour Session</h4>
-                </div>
-                <div class="card">
-                    <div
-                        class="card-img"
-                        style="
-                            background-image: url('./assets/photos/teachers I taught at Austin TX.jpeg');
-                        "
-                    >
-                        <h4 class="hover-text">Learn More</h4>
-                    </div>
-                    <h4 class="bottom-text text-center">1-2 Hour Session</h4>
-                </div>
-            </div>
+            <div
+                class="grid-container grid-auto-size"
+                id="card-target-teacher"
+            ></div>
         </section>
 
         <!-- Student Section -->
         <section class="hide-section" id="student-section">
             Student Section
+            <div class="hide-section" id="card-target-student"></div>
+        </section>
+
+        <!-- Kind Words Section -->
+        <section class="white-background section-pad">
+            <h1 class="text-center">Kind Words</h1>
+            <span class="quote-mark">&ldquo;</span>
+            <div
+                class="testimonial-container flex-container col"
+                id="testimonial-target"
+            ></div>
         </section>
 
         <!-- Footer -->
@@ -113,5 +98,7 @@
         ></script>
         <script src="./js/navController.js"></script>
         <script src="./js/lessonsController.js"></script>
+        <script src="./js/modalController.js"></script>
+        <script src="./js/testimonialController.js"></script>
     </body>
 </html>
