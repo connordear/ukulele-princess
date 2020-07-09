@@ -214,6 +214,10 @@ img {
     padding-bottom: var(--section-margin);
 }
 
+.margin-top {
+    margin-top: var(--section-margin)
+}
+
 .small-margin {
     margin-top: var(--small-margin);
 }
@@ -285,6 +289,7 @@ img {
     width: 300px;
     height: 400px;
     padding: 10px;
+    margin: 0 auto;
     background-color: var(--dark-grey);
     display: flex;
     flex-direction: column;

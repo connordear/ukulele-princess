@@ -23,32 +23,32 @@ const studentModals = {
         title: "Highlands Ukulele Gang",
         text:
             "Dolore officia ex consectetur in minim. Aliqua nisi pariatur ullamco elit anim aliquip anim minim adipisicing ad ut voluptate. Tempor pariatur magna deserunt adipisicing aute dolore labore esse sunt duis elit laboris irure.",
-        photo: "./assets/photos/ukulele-kids.jpeg",
+        photo: "./assets/photos/ukulele-kids.jpg",
     },
     student_2: {
         title: "4x4 Ukulele Fun",
         text:
             "Dolore officia ex consectetur in minim. Aliqua nisi pariatur ullamco elit anim aliquip anim minim adipisicing ad ut voluptate. Tempor pariatur magna deserunt adipisicing aute dolore labore esse sunt duis elit laboris irure.",
-        photo: "./assets/photos/ukulele-kids.jpeg",
+        photo: "./assets/photos/ukulele-kids.jpg",
     },
     student_3: {
         title: "Build Your Own",
         text:
             "Dolore officia ex consectetur in minim. Aliqua nisi pariatur ullamco elit anim aliquip anim minim adipisicing ad ut voluptate. Tempor pariatur magna deserunt adipisicing aute dolore labore esse sunt duis elit laboris irure.",
-        photo: "./assets/photos/ukulele-kids.jpeg",
+        photo: "./assets/photos/ukulele-kids.jpg",
     },
 };
 
 // Initialize Page With Cards
 for (var key in teacherModals) {
     let { title, text, photo } = teacherModals[key];
-    let card = createCardTemplate({ key, title, text, photo }, false);
+    let card = createCardTemplate({ key, title, text, photo });
     $("#card-target-teacher").append(card);
     $(`#${key}`).click(e => displayModal({ title, text, photo }));
 }
 for (var key in studentModals) {
     let { title, text, photo } = studentModals[key];
-    let card = createCardTemplate({ key, title, text, photo }, true);
+    let card = createCardTemplate({ key, title, text, photo });
     $("#card-target-student").append(card);
     $(`#${key}`).click(e => displayModal({ title, text, photo }));
 }
@@ -62,9 +62,9 @@ $("#modal-content").click(e => {
     e.stopPropagation();
 });
 
-function createCardTemplate({ key, title, text, photo }, hidden) {
+function createCardTemplate({ key, title, text, photo }) {
     return `
-        <div class="card ${hidden ? "hidden" : null}" id=${key}>
+        <div class="card" id=${key}>
             <div
                 class="card-img"
                 style="

@@ -3,9 +3,11 @@
     visibility: visible;
 }
 
-.hide-section {
+.hide-section,
+.hide-section * {
     visibility: hidden;
     height: 0;
+    margin: 0;
 }
 
 /*=============================================*/
