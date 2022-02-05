@@ -3,26 +3,26 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap");
 
 @font-face {
-    font-family: "SanziahAlt";
-    src: url("../assets/fonts/sanziah_alt.woff2") format("woff2"),
-        url("../assets/fonts/sanziah_alt.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SanziahAlt";
+  src: url("../assets/fonts/sanziah_alt.woff2") format("woff2"),
+    url("../assets/fonts/sanziah_alt.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "SanziahRegular";
-    src: url("../assets/fonts/sanziah_regular.woff2") format("woff2"),
-        url("../assets/fonts/sanziah_regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "SanziahRegular";
+  src: url("../assets/fonts/sanziah_regular.woff2") format("woff2"),
+    url("../assets/fonts/sanziah_regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Cosette";
-    src: url("Cosette.eot") format("embedded-opentype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Cosette";
+  src: url("Cosette.eot") format("embedded-opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 /*===================================================*/
@@ -30,21 +30,22 @@
 /*================== COLOURS & KEYSTONE SPACING ====================*/
 
 :root {
-    --dark-grey: #2e2e2e;
-    --dark-grey-transparent: #2e2e2e5a;
-    --dark-grey-transluscent: #2e2e2ecc;
-    --light-grey: #7c7c7c;
-    --crown-gold: #d59638;
-    --white: #ffffff;
-    --black: #000000;
-    --black-transluscent: #000000dc;
-    --drop-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    --section-margin: 100px;
-    --small-margin: 10px;
-    --transition-timing: 0.5s;
-    --transition-timing-fast: 0.2s;
-    --media-max-width: 775px;
+  --dark-grey: #2e2e2e;
+  --dark-grey-transparent: #2e2e2e5a;
+  --dark-grey-transluscent: #2e2e2ecc;
+  --light-grey: #7c7c7c;
+  --crown-gold: #d59638;
+  --white: #ffffff;
+  --black: #000000;
+  --black-transluscent: #000000dc;
+  --drop-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  --section-margin: 100px;
+  --small-margin: 10px;
+  --large-margin: 50px;
+  --transition-timing: 0.5s;
+  --transition-timing-fast: 0.2s;
+  --media-max-width: 775px;
 }
 
 /*===================================================*/
@@ -53,173 +54,185 @@
 
 /* Body */
 body {
-    background-color: var(--dark-grey);
-    color: var(--white);
-    font-family: "Montserrat", sans-serif;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Main Titles */
 h1 {
-    font-family: "SanziahAlt", "Georgia", serif;
-    font-size: 200pt;
+  font-family: "SanziahAlt", "Georgia", serif;
+  font-size: 200pt;
 }
 
 /* Section Headings */
 h2 {
-    font-size: 35pt;
-    font-weight: 200;
-    text-align: center;
-    letter-spacing: 2pt;
-    text-transform: uppercase;
-    color: var(--dark-grey);
+  font-size: 35pt;
+  font-weight: 200;
+  text-align: center;
+  letter-spacing: 2pt;
+  text-transform: uppercase;
+  color: var(--dark-grey);
 }
 
 /* Subtitle */
 h3 {
-    font-size: 18pt;
-    letter-spacing: 4pt;
-    text-transform: uppercase;
+  font-size: 18pt;
+  letter-spacing: 4pt;
+  text-transform: uppercase;
 }
 
 h4 {
-    font-size: 12pt;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  font-size: 12pt;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 h5 {
-    font-size: 24pt;
-    font-family: "Montserrat";
-    font-weight: 200;
-    letter-spacing: 1pt;
-    text-transform: uppercase;
-    margin-top: 10px;
+  font-size: 24pt;
+  font-family: "Montserrat";
+  font-weight: 200;
+  letter-spacing: 1pt;
+  text-transform: uppercase;
+  margin-top: 10px;
 }
 
 p {
-    font-family: "Georgia", serif;
-    font-weight: 100;
-    font-size: 14pt;
-    letter-spacing: 0.5pt;
-    line-height: 20pt;
+  font-family: "Georgia", serif;
+  font-weight: 100;
+  font-size: 14pt;
+  letter-spacing: 0.5pt;
+  line-height: 20pt;
 }
 
 button {
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 11pt;
-    display: block;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    cursor: pointer;
-    color: var(--white);
-    background-color: var(--dark-grey);
-    border: 1px solid var(--light-grey);
-    letter-spacing: 2px;
-    transition: var(--transition-timing);
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 11pt;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--dark-grey);
+  border: 1px solid var(--light-grey);
+  letter-spacing: 2px;
+  transition: var(--transition-timing);
 }
 
 button:hover {
-    border-color: var(--crown-gold);
-    color: var(--crown-gold);
-    box-shadow: var(--drop-shadow);
-    transition: var(--transition-timing);
+  border-color: var(--crown-gold);
+  color: var(--crown-gold);
+  box-shadow: var(--drop-shadow);
+  transition: var(--transition-timing);
 }
 
 button:active {
-    border: 1px solid gold;
-    color: gold;
+  border: 1px solid gold;
+  color: gold;
 }
 
-
 .button-selected {
-    background-color: var(--white);
-    color: var(--black);
-    font-weight: 300;
+  background-color: var(--white);
+  color: var(--black);
+  font-weight: 300;
 }
 
 .link-button {
-    display: inline-block;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 100;
-    font-size: 11pt;
-    margin: 0 auto;
-    margin-top: 50px;
-    padding: 15px;
-    padding-left: 30px;
-    padding-right: 30px;
-    cursor: pointer;
-    color: var(--white);
-    background-color: var(--dark-grey);
-    border: 1px solid var(--light-grey);
-    letter-spacing: 2px;
-    transition: var(--transition-timing);
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 11pt;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  cursor: pointer;
+  color: var(--white);
+  background-color: var(--dark-grey);
+  border: 1px solid var(--light-grey);
+  letter-spacing: 2px;
+  transition: var(--transition-timing);
 }
 
 .link-button:hover {
-    color: var(--crown-gold);
-    border-color: var(--crown-gold);
-    box-shadow: var(--drop-shadow);
-    transition: var(--transition-timing);
+  color: var(--crown-gold);
+  border-color: var(--crown-gold);
+  box-shadow: var(--drop-shadow);
+  transition: var(--transition-timing);
 }
 
 .button-light {
-    background-color: inherit;
-    color: var(--light-grey);
-    border: 1px solid var(--light-grey);
+  background-color: inherit;
+  color: var(--light-grey);
+  border: 1px solid var(--light-grey);
 }
 
 img {
-    box-shadow: var(--drop-shadow);
+  box-shadow: var(--drop-shadow);
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .white-text {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .black-text {
-    color: #000000;
+  color: #000000;
 }
 
 .grey-backround {
-    background-color: #2e2e2e;
+  background-color: #2e2e2e;
 }
 
 .white-background {
-    background-color: var(--white);
-    color: var(--black);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .link {
-    color: #29a2e7;
-    text-decoration: underline;
+  color: #29a2e7;
+  text-decoration: underline;
 }
 
 .default-margin {
-    width: 70%;
-    margin: 0 auto;
-    margin-top: var(--section-margin);
+  width: 70%;
+  margin: 0 auto;
+  margin-top: var(--section-margin);
 }
 
 .section-pad {
-    padding-top: var(--section-margin);
-    padding-bottom: var(--section-margin);
+  padding-top: var(--section-margin);
+  padding-bottom: var(--section-margin);
 }
 
 .small-margin {
-    margin-top: var(--small-margin);
+  margin-top: var(--small-margin);
+}
+
+.large-margin {
+  margin-top: var(--large-margin);
+}
+
+.small-pad-right {
+  padding-right: var(--small-margin);
 }
 
 .no-shadow {
-    box-shadow: none;
+  box-shadow: none;
+}
+
+.animated-height {
+  transition: var(--transition-timing);
+  overflow: hidden;
 }
 
 /*===================================================*/
@@ -227,31 +240,31 @@ img {
 /*================== FLEX CLASSES ====================*/
 
 .flex-container {
-    display: flex;
-    width: 70%;
-    margin: 30px auto;
-    flex-direction: row;
-    margin-top: var(--section-margin);
+  display: flex;
+  width: 70%;
+  margin: 30px auto;
+  flex-direction: row;
+  margin-top: var(--section-margin);
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .col {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .flex-center-horizontally {
-    justify-content: center;
+  justify-content: center;
 }
 
 .flex-center-vertically {
-    align-items: center;
+  align-items: center;
 }
 
 /*===================================================*/
@@ -259,87 +272,87 @@ img {
 /*================== GRID CLASSES ====================*/
 
 .grid-container {
-    display: grid;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: var(--section-margin);
+  display: grid;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: var(--section-margin);
 }
 
 .grid-auto-size {
-    align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    grid-column-gap: 10%;
-    grid-row-gap: 20px;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-column-gap: 10%;
+  grid-row-gap: 20px;
 }
 
 .grid-one-third {
-    align-items: center;
-    grid-template-columns: 33% auto;
-    grid-column-gap: 10%;
-    grid-row-gap: 20px;
+  align-items: center;
+  grid-template-columns: 33% auto;
+  grid-column-gap: 10%;
+  grid-row-gap: 20px;
 }
 
 /*================== CARD CLASSES ====================*/
 
 .card {
-    width: 300px;
-    height: 400px;
-    padding: 10px;
-    background-color: var(--dark-grey);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    cursor: pointer;
-    transition: box-shadow var(--transition-timing-fast) ease-in;
+  width: 300px;
+  height: 400px;
+  padding: 10px;
+  background-color: var(--dark-grey);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  cursor: pointer;
+  transition: box-shadow var(--transition-timing-fast) ease-in;
 }
 
 .card .card-img {
-    height: 70%;
-    width: 90%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 70%;
+  width: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-hover-text-container {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    background-color: var(--black-transluscent);
-    transition: opacity var(--transition-timing-fast);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  background-color: var(--black-transluscent);
+  transition: opacity var(--transition-timing-fast);
 }
 
 .card:hover .card-hover-text-container {
-    opacity: 100%;
+  opacity: 100%;
 }
 
 .card .card-hover-text {
-    text-align: center;
-    opacity: 0;
-    font-size: 15pt;
-    transition: opacity var(--transition-timing-fast);
+  text-align: center;
+  opacity: 0;
+  font-size: 15pt;
+  transition: opacity var(--transition-timing-fast);
 }
 
 .card:hover {
-    box-shadow: var(--drop-shadow);
+  box-shadow: var(--drop-shadow);
 }
 
 .card:hover .card-hover-text {
-    opacity: 100%;
-    color: var(--crown-gold);
-    background-color: var(--black-transluscent);
+  opacity: 100%;
+  color: var(--crown-gold);
+  background-color: var(--black-transluscent);
 }
 
 .card .card-bottom-text {
-    letter-spacing: 2pt;
-    font-size: 13pt;
+  letter-spacing: 2pt;
+  font-size: 13pt;
 }
 
 /* If there's an image, darken it */
@@ -349,51 +362,51 @@ img {
 /*================== MODAL CLASSES ====================*/
 
 .hidden {
-    visibility: hidden;
-    height: 0;
+  visibility: hidden;
+  height: 0;
 }
 
 #modal-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: var(--black-transluscent);
-    z-index: 50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--black-transluscent);
+  z-index: 50;
 }
 
 #modal-content {
-    position: fixed;
-    top: 100px;
-    background-color: var(--white);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 800px;
-    width: 80%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    padding: 30px;
-    border-radius: 2px;
-    z-index: 100;
+  position: fixed;
+  top: 100px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 30px;
+  border-radius: 2px;
+  z-index: 100;
 }
 
 #modal-content h2 {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 #modal-content img {
-    margin-top: 15px;
-    width: 80%;
-    height: auto;
+  margin-top: 15px;
+  width: 80%;
+  height: auto;
 }
 
 #modal-content p {
-    margin-top: 15px;
-    font-family: "Montserrat", sans-serif;
-    color: var(--black);
+  margin-top: 15px;
+  font-family: "Montserrat", sans-serif;
+  color: var(--black);
 }
 
 /*===================================================*/
@@ -401,118 +414,118 @@ img {
 /*================== NAV CLASSES ====================*/
 
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 70px;
-    /* border-bottom: 1px solid white; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: var(--transition-timing);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  /* border-bottom: 1px solid white; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition-timing);
 }
 
 nav ul {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 nav ul li {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
 .nav-link {
-    font-family: "Montserrat", sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1pt;
-    font-size: 10pt;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1pt;
+  font-size: 10pt;
 }
 
-.nav-link>a {
-    padding: 15px;
-    padding-left: 35px;
-    padding-right: 35px;
-    transition: var(--transition-timing);
+.nav-link > a {
+  padding: 15px;
+  padding-left: 35px;
+  padding-right: 35px;
+  transition: var(--transition-timing);
 }
 
-.nav-link>a:hover {
-    color: var(--crown-gold);
-    transition: var(--transition-timing);
-    /* box-shadow: var(--drop-shadow); */
+.nav-link > a:hover {
+  color: var(--crown-gold);
+  transition: var(--transition-timing);
+  /* box-shadow: var(--drop-shadow); */
 }
 
 .nav-logo {
-    height: 60px;
-    box-shadow: none;
+  height: 60px;
+  box-shadow: none;
 }
 
 .nav-small {
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-logo-sm {
-    margin-top: 5px;
-    height: 70px;
-    margin-left: 20px;
+  margin-top: 5px;
+  height: 70px;
+  margin-left: 20px;
 }
 
 .nav-hamburger {
-    height: 50px;
+  height: 50px;
 }
 
 #nav-expand {
-    padding: 0;
-    background: none;
-    border: none;
-    margin: 0;
-    margin-right: 20px;
+  padding: 0;
+  background: none;
+  border: none;
+  margin: 0;
+  margin-right: 20px;
 }
 
 #nav-expand:hover {
-    box-shadow: none;
+  box-shadow: none;
 }
 
 .nav-margin-top {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .nav-bar-dark-bg {
-    background-color: var(--dark-grey-transparent);
+  background-color: var(--dark-grey-transparent);
 }
 
 #sidebar {
-    position: fixed;
-    width: 50%;
-    height: 100vh;
-    right: -52%;
-    top: 0;
-    bottom: 0;
-    background-color: var(--light-grey);
-    box-shadow: var(--drop-shadow);
-    transition: var(--transition-timing);
+  position: fixed;
+  width: 50%;
+  height: 100vh;
+  right: -52%;
+  top: 0;
+  bottom: 0;
+  background-color: var(--light-grey);
+  box-shadow: var(--drop-shadow);
+  transition: var(--transition-timing);
 }
 
 .show-sidebar {
-    right: 0 !important;
+  right: 0 !important;
 }
 
 #sidebar ul {
-    display: flex;
-    height: 50%;
-    flex-direction: column;
-    justify-content: space-evenly;
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 #sidebar ul li button {
-    margin-top: 10px;
-    margin-left: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
 }
 
 /*===================================================*/
@@ -520,11 +533,11 @@ nav ul li {
 /*================== Footer Styling ====================*/
 
 footer {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-img {
-    max-width: 200px;
+  max-width: 200px;
 }
 
 /*===================================================*/
@@ -532,14 +545,39 @@ footer {
 /*================== MEDIA SIZING CLASSES ====================*/
 
 @media (max-width: 775px) {
-    .flex-container {
-        flex-direction: column;
-        width: auto;
-    }
+  .flex-container {
+    flex-direction: column;
+    width: auto;
+  }
 
-    .grid-one-third {
-        grid-template-columns: auto;
-    }
+  .grid-one-third {
+    grid-template-columns: auto;
+  }
 }
 
+/*===================================================*/
+
+/*================== SCROLLBAR CLASSES ====================*/
+::-webkit-scrollbar {
+  background-color: rgba(0, 0, 0, 0);
+  margin: 1px;
+  width: 0.8em;
+}
+
+::-webkit-scrollbar-thumb:window-inactive,
+::-webkit-scrollbar-thumb {
+  /* background: rgba(55, 55, 55, 0.2); */
+  background: var(--light-grey);
+  border-radius: 10px;
+  width: 0.8em;
+}
+::-webkit-scrollbar-corner {
+  background: rgba(0, 0, 0, 0);
+}
+::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+::-webkit-scrollbar-thumb:horizontal {
+  border-radius: 10px;
+}
 /*===================================================*/
